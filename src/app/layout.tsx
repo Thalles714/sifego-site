@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     url: configuredSiteUrl ? "/" : undefined,
     images: [
       {
-        url: "/og-sifego.png",
+        url: "/og-sifego-v2.png",
         width: 1200,
         height: 630,
         alt: "Sifego, soluções digitais sob medida",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
-    images: ["/og-sifego.png"],
+    images: ["/og-sifego-v2.png"],
   },
 };
 

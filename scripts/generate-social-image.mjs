@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const siteDirectory = path.resolve(scriptDirectory, "..");
 const symbolPath = path.join(siteDirectory, "public", "assets", "brand", "sifego-symbol.svg");
-const outputPath = path.join(siteDirectory, "public", "og-sifego.png");
+const outputPath = path.join(siteDirectory, "public", "og-sifego-v2.png");
 const symbol = await readFile(symbolPath, "utf8");
 
 const browser = await chromium.launch({ headless: true });

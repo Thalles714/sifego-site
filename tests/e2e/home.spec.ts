@@ -319,7 +319,7 @@ test("mantém metadados e bloqueio de indexação antes da autorização", async
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
   await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
     "content",
-    /og-sifego\.png$/,
+    /og-sifego-v2\.png$/,
   );
   await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute(
     "content",
