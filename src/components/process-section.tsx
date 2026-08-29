@@ -24,12 +24,16 @@ export function ProcessSection() {
           <h2 className="process-section__title" id="process-title">
             <span className="process-section__title-line">
               <span className="process-section__title-line-inner">
-                Atendimento <span className="process-section__title-emphasis">direto,</span>
+                Um estúdio que valoriza um
               </span>
             </span>
-            {" "}
             <span className="process-section__title-line">
-              <span className="process-section__title-line-inner">do início à entrega.</span>
+              <span className="process-section__title-line-inner">
+                <span className="process-section__title-emphasis">bom trabalho</span> e cultiva as relações
+              </span>
+            </span>
+            <span className="process-section__title-line">
+              <span className="process-section__title-line-inner">que o tornam possível.</span>
             </span>
           </h2>
         </div>

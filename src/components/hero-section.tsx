@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { services, type ServiceContent } from "@/lib/content";
-import { whatsappUrl } from "@/lib/site";
 
 type RailCard = {
   id: string;
@@ -129,30 +128,17 @@ export function HeroSection() {
                 tabIndex={-1}
               >
                 <div className="rail-card__copy">
-                  <div className="rail-card__topline">
-                    <span>Estúdio digital</span>
+                  <div className="rail-card__topline rail-card__topline--about">
+                    <h2>Sobre Sifego</h2>
                     <span className="rail-card__topline-actions">
-                      <span className="rail-card__marker">Brasil</span>
+                      <span className="rail-card__availability">Agenda aberta</span>
                       <RailStepButton next={{ id: "sites", label: "Mostrar o serviço Sites e landing pages" }} />
                     </span>
                   </div>
-                  <h2>Sobre Sifego</h2>
                   <p>
                     Criamos sites, sistemas, automações, branding e campanhas com escopo, prazo e
                     investimento definidos para cada projeto.
                   </p>
-                  <a
-                    className="rail-card__cta external-action"
-                    href={whatsappUrl}
-                    data-analytics-event="whatsapp_click"
-                    data-cta-location="hero"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Agende uma reunião pelo WhatsApp, abre outro site em nova aba"
-                  >
-                    Agende uma reunião
-                  </a>
-                  <p className="rail-card__support">Agenda aberta</p>
                 </div>
                 <div className="rail-card__media rail-card__media--about has-image">
                   <Image

@@ -6,6 +6,7 @@
         --surface-soft: #383735;
         --text: #ffffff;
         --muted: #868481;
+        --rail-muted: #92908d;
         --quiet: #696764;
         --rule: #2c2b2a;
         --focus: #5c74ff;
@@ -29,6 +30,7 @@
         --surface-soft: #dcdcdc;
         --text: #000000;
         --muted: #696764;
+        --rail-muted: #696764;
         --quiet: #868481;
         --rule: #d8d8d8;
         --nav-surface: #ffffff;
@@ -327,7 +329,7 @@
         min-height: 100svh;
         grid-template-rows: clamp(210px, 40svh, 272px) minmax(0, 1fr);
         column-gap: var(--gap);
-        row-gap: 18px;
+        row-gap: 14px;
         padding: 0 var(--outer) var(--outer);
         overflow: clip;
       }
@@ -395,8 +397,8 @@
       .hero__stage {
         display: grid;
         min-height: 0;
-        grid-template-columns: minmax(0, 1fr) minmax(280px, 22%);
-        gap: var(--gap);
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 22.5%);
+        gap: 6.5px;
       }
 
       .showreel {
@@ -501,7 +503,7 @@
       .service-rail__track {
         position: relative;
         display: grid;
-        gap: var(--gap);
+        gap: 6.5px;
         padding-bottom: 32%;
       }
 
@@ -522,7 +524,7 @@
       }
 
       .rail-card--about {
-        min-height: 266px;
+        min-height: 275px;
       }
 
       .rail-card__copy {
@@ -534,12 +536,20 @@
         padding: 9px 9px 10px;
       }
 
+      .rail-card--about .rail-card__copy {
+        padding-bottom: 8.5px;
+      }
+
+      .rail-card:not(.rail-card--about) .rail-card__copy {
+        min-height: 99.75px;
+      }
+
       .rail-card__topline {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 10px;
-        color: var(--muted);
+        color: var(--rail-muted);
         font-size: 11px;
         letter-spacing: 0.025em;
       }
@@ -548,6 +558,30 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
+      }
+
+      .rail-card__topline--about {
+        color: var(--text);
+      }
+
+      .rail-card__topline--about h2 {
+        margin: 0;
+      }
+
+      .rail-card__availability {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+      }
+
+      .rail-card__availability::before {
+        width: 5px;
+        height: 5px;
+        flex: 0 0 auto;
+        border-radius: 50%;
+        background: var(--contact);
+        content: "";
       }
 
       .rail-card__marker {
@@ -621,7 +655,7 @@
 
       .rail-card p {
         margin: 4px 0 0;
-        color: var(--muted);
+        color: var(--rail-muted);
         font-size: 12px;
         line-height: 1.35;
       }
@@ -646,9 +680,11 @@
 
       .rail-card__media {
         position: relative;
-        height: 132px;
+        width: calc(100% - 13px);
+        height: auto;
+        aspect-ratio: 16 / 9;
         flex: 0 0 auto;
-        margin: 0 8px 8px;
+        margin: 0 6.5px 6.5px;
         overflow: hidden;
         border: 0;
         border-radius: 3px;
@@ -659,7 +695,14 @@
       }
 
       .rail-card--about .rail-card__media {
-        height: 142px;
+        height: auto;
+      }
+
+      .rail-card--about .rail-card__copy > p {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
       }
 
       .rail-card__media::before,
@@ -983,13 +1026,13 @@
         }
 
         .showreel {
-          height: min(62vw, calc(100svh - 240px));
-          min-height: 180px;
-          aspect-ratio: auto;
+          height: auto;
+          min-height: 0;
+          aspect-ratio: 1;
         }
 
         .hero__stage {
-          margin-top: 16px;
+          margin-top: 7px;
         }
       }
 
@@ -1042,9 +1085,9 @@
 
         .hero__title {
           max-width: 100%;
-          font-size: clamp(32px, 8.8vw, 38px);
+          font-size: clamp(34px, 9.74vw, 38px);
           letter-spacing: -0.05em;
-          line-height: 0.98;
+          line-height: 1.1;
         }
 
         .headline-line {
@@ -1057,8 +1100,8 @@
         }
 
         .service-rail-shell {
-          height: 428px;
-          min-height: 428px;
+          height: 424px;
+          min-height: 424px;
         }
 
         .service-rail__fade {
@@ -1068,13 +1111,13 @@
         .rail-card,
         .rail-card--about {
           display: grid;
-          min-height: 132px;
-          grid-template-columns: 92px minmax(0, 1fr);
+          min-height: 96px;
+          grid-template-columns: 99px minmax(0, 1fr);
           grid-template-rows: 1fr;
         }
 
         .rail-card--about {
-          min-height: 148px;
+          min-height: 86px;
         }
 
         .rail-card__copy {
@@ -1086,12 +1129,13 @@
 
         .rail-card__media,
         .rail-card--about .rail-card__media {
-          width: auto;
-          height: auto;
+          width: 88px;
+          height: 59px;
           min-height: 0;
+          aspect-ratio: auto;
           grid-column: 1;
           grid-row: 1;
-          margin: 7px 0 7px 7px;
+          margin: 8px 11px 7px 0;
         }
 
         .rail-card__topline {
@@ -1114,6 +1158,15 @@
 
         .rail-card__support {
           padding-top: 4px;
+        }
+
+        .service-rail__track {
+          gap: 0;
+          padding-top: 60px;
+        }
+
+        .rail-card:not(.rail-card--about) .rail-card__copy {
+          min-height: 96px;
         }
 
         .rail-card__media--sites .rail-card__media-image {
@@ -2134,34 +2187,8 @@
   display: grid;
 }
 
-.rail-card__cta {
-  display: inline-flex;
-  width: max-content;
-  min-height: 28px;
-  align-items: center;
-  margin-top: 10px;
-  padding: 0 8px;
-  border-radius: 3px;
-  background: var(--text);
-  color: var(--surface);
-  font-size: 10.5px;
-  font-weight: 680;
-  line-height: 1;
-  transition:
-    background-color 180ms ease,
-    color 180ms ease,
-    transform 360ms var(--ease-out);
-}
-
-.rail-card__cta:hover,
-.rail-card__cta:focus-visible {
-  background: var(--contact);
-  color: #000000;
-  transform: translateY(-1px);
-}
-
 .rail-card--about {
-  min-height: 302px;
+  min-height: 275px;
 }
 
 .service-showcase,
@@ -2250,6 +2277,63 @@
   border-radius: inherit;
   content: "";
   pointer-events: none;
+}
+
+.service-orbit {
+  position: absolute;
+  isolation: isolate;
+  inset: 0;
+  overflow: hidden;
+  background: #050607;
+  pointer-events: none;
+}
+
+.service-orbit > img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-orbit__space {
+  z-index: 0;
+}
+
+.service-orbit__planet {
+  z-index: 1;
+  mix-blend-mode: screen;
+  transform-origin: 52% 48%;
+  animation: service-orbit-spin 48s linear infinite;
+  will-change: transform;
+}
+
+.service-orbit::after {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgb(0 0 0 / 6%) 0%,
+    rgb(0 0 0 / 22%) 54%,
+    rgb(0 0 0 / 70%) 100%
+  );
+  content: "";
+  pointer-events: none;
+}
+
+.service-orbit__foreground {
+  z-index: 3;
+}
+
+@keyframes service-orbit-spin {
+  from {
+    transform: rotate(0deg) scale(1.075);
+  }
+
+  to {
+    transform: rotate(360deg) scale(1.075);
+  }
 }
 
 .service-proof__media > img,
@@ -2544,8 +2628,8 @@
 
 @media (max-width: 767px) {
   .hero__top {
-    height: 240px;
-    padding-top: 70px;
+    height: clamp(196px, 55.5vw, 218px);
+    padding-top: clamp(80px, 23.4vw, 96px);
   }
 
   .service-showcase,
@@ -2601,13 +2685,7 @@
   }
 
   .rail-card--about {
-    min-height: 176px;
-  }
-
-  .rail-card__cta {
-    min-height: 28px;
-    margin-top: 6px;
-    font-size: 9.5px;
+    min-height: 86px;
   }
 }
 
@@ -2627,6 +2705,11 @@
   .service-proof__video {
     display: none !important;
   }
+
+  .service-orbit__planet {
+    animation: none !important;
+    transform: scale(1.075) !important;
+  }
 }
 
 /* Migration refinements: preserve appearance while improving touch accessibility. */
@@ -2636,8 +2719,7 @@
   .motion-toggle,
   .theme-toggle,
   .mobile-services-toggle,
-  .rail-card__step,
-  .rail-card__cta {
+  .rail-card__step {
     min-width: 44px;
     min-height: 44px;
   }

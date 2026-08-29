@@ -1,8 +1,8 @@
 {
   "source": "site/src",
-  "generatedAt": "2026-08-28",
-  "count": 40,
-  "totalBytes": 26400147,
+  "generatedAt": "2026-08-29",
+  "count": 43,
+  "totalBytes": 26734205,
   "assets": [
     {
       "path": "assets/brand/sifego-symbol.svg",
@@ -193,6 +193,21 @@
       "path": "assets/production/site/services/sistemas-workflow-arco-v01.webp",
       "bytes": 122288,
       "sha256": "be62d35b59938b7f5cb00112f4a12fb8e62bac0bcaa58fcd6fe2d7170646db2b"
+    },
+    {
+      "path": "assets/production/site/services/sites-landing-pages-thalles-v02-foreground.webp",
+      "bytes": 63690,
+      "sha256": "bae8e90bac9ddf3d271fc9ec492afeaa5a5dc72e9e0e804e95882fb2d540af99"
+    },
+    {
+      "path": "assets/production/site/services/sites-landing-pages-thalles-v02-planet.webp",
+      "bytes": 250264,
+      "sha256": "b4432fe195372e86d1843c6cd3c58ec896e26bd8c51216e6deea453f837c078a"
+    },
+    {
+      "path": "assets/production/site/services/sites-landing-pages-thalles-v02-space.webp",
+      "bytes": 20104,
+      "sha256": "e32db34b401875adc0270dee8f828781e0f93afd09b8c65905b387e9e471dc0a"
     },
     {
       "path": "assets/production/site/services/sites-landing-pages-thalles-v02.webp",

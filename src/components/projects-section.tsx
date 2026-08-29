@@ -306,12 +306,12 @@ export function ProjectsSection() {
           <h2 className="projects__title" id="projects-title">
             <span className="projects__title-line">
               <span className="projects__title-line-inner">
-                Projetos reais para apresentar, organizar e divulgar
+                Em parceria com equipes <span className="projects__title-emphasis">ambiciosas</span> para
               </span>
             </span>
             <span className="projects__title-line">
               <span className="projects__title-line-inner">
-                negócios com mais <span className="projects__title-emphasis">clareza.</span>
+                criar experiências digitais relevantes na era dos prompts.
               </span>
             </span>
           </h2>

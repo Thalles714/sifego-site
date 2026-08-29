@@ -1,8 +1,44 @@
 import Image from "next/image";
 import { services, type ServiceContent } from "@/lib/content";
 
+function ServiceOrbitMedia({ alt }: { alt: string }) {
+  return (
+    <div className="service-orbit" aria-label={alt} role="img">
+      <Image
+        className="service-orbit__space"
+        src="/assets/production/site/services/sites-landing-pages-thalles-v02-space.webp"
+        alt=""
+        fill
+        sizes="(max-width: 767px) 100vw, 50vw"
+        loading="lazy"
+        decoding="async"
+      />
+      <Image
+        className="service-orbit__planet"
+        src="/assets/production/site/services/sites-landing-pages-thalles-v02-planet.webp"
+        alt=""
+        fill
+        sizes="(max-width: 767px) 100vw, 50vw"
+        loading="lazy"
+        decoding="async"
+      />
+      <Image
+        className="service-orbit__foreground"
+        src="/assets/production/site/services/sites-landing-pages-thalles-v02-foreground.webp"
+        alt=""
+        fill
+        sizes="(max-width: 767px) 100vw, 50vw"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+  );
+}
+
 function ServiceMedia({ service }: { service: ServiceContent }) {
   const media = service.showcaseMedia;
+  if (service.id === "sites") return <ServiceOrbitMedia alt={media.alt} />;
+
   if (media.kind === "video") {
     return (
       <div className="service-proof__video-shell">
@@ -53,12 +89,13 @@ export function ServicesSection() {
           <h2 className="service-showcase__title" id="services-title">
             <span className="service-showcase__title-line">
               <span className="service-showcase__title-line-inner">
-                A solução certa começa pelo problema
+                Nossos <span className="service-showcase__title-emphasis">experimentos</span>,{" "}
+                <span className="service-showcase__title-emphasis">produtos</span> e{" "}
               </span>
             </span>
             <span className="service-showcase__title-line">
-              <span className="service-showcase__title-line-inner service-showcase__title-emphasis">
-                que precisa resolver.
+              <span className="service-showcase__title-line-inner">
+                <span className="service-showcase__title-emphasis">curiosidade</span> moldam novas formas de trabalhar.
               </span>
             </span>
           </h2>

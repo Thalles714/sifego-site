@@ -14,13 +14,12 @@ test("preserva a proposta, a conversão única e a estrutura final", async ({ pa
   const meetingCtas = page.locator(
     ".rail-card__cta, .studio-panel__cta, .site-footer__cta",
   );
-  await expect(meetingCtas).toHaveCount(3);
+  await expect(meetingCtas).toHaveCount(2);
   await expect(meetingCtas).toHaveText([
     "Agende uma reunião",
     "Agende uma reunião",
-    "Agende uma reunião",
   ]);
-  await expect(page.locator(".rail-card__support")).toHaveText("Agenda aberta");
+  await expect(page.locator(".rail-card__availability")).toHaveText("Agenda aberta");
   await expect(page.getByRole("link", { name: "Privacidade" })).toHaveAttribute(
     "href",
     "/politica-de-privacidade",
@@ -33,7 +32,7 @@ test("preserva a proposta, a conversão única e a estrutura final", async ({ pa
   ).toEqual(["inicio", "projetos", "servicos", "como-trabalhamos"]);
   await expect(page.locator(".project-logos")).toHaveCount(0);
   const externalLinks = page.locator('a[target="_blank"]');
-  await expect(externalLinks).toHaveCount(12);
+  await expect(externalLinks).toHaveCount(11);
   expect(
     await externalLinks.evaluateAll((links) =>
       links.every((link) => link.getAttribute("rel") === "noopener noreferrer"),
@@ -42,7 +41,7 @@ test("preserva a proposta, a conversão única e a estrutura final", async ({ pa
   for (const link of await externalLinks.all()) {
     await expect(link).toHaveAttribute("aria-label", /abre outro site em nova aba/);
   }
-  await expect(page.locator(".external-action")).toHaveCount(4);
+  await expect(page.locator(".external-action")).toHaveCount(3);
   expect(
     await page.locator(".external-action").first().evaluate((link) =>
       getComputedStyle(link, "::after").content.includes("↗"),
@@ -102,6 +101,9 @@ test("apresenta os seis serviços na ordem canônica no trilho e na prancha", as
   await expect(proofs).toHaveCount(6);
   await expect(proofs.locator("h3")).toHaveText(expectedServices);
   await expect(page.locator(".services__sticky, .services-index")).toHaveCount(0);
+  await expect(page.locator(".service-showcase__title")).toContainText(
+    "Nossos experimentos, produtos e curiosidade moldam novas formas de trabalhar.",
+  );
 
   const brandingVideo = page.locator("#servico-branding [data-service-video]");
   await expect(brandingVideo).toHaveAttribute("poster", /branding-sifego-system-v04-poster\.webp$/);
@@ -113,7 +115,7 @@ test("apresenta os seis serviços na ordem canônica no trilho e na prancha", as
   );
 });
 
-test("mantém os projetos na ordem aprovada e sem linguagem de prompts", async ({ page }) => {
+test("mantém os projetos na ordem aprovada e o título vigente", async ({ page }) => {
   await page.goto("/");
 
   await expect(page.locator(".project-row__name")).toHaveText([
@@ -122,7 +124,10 @@ test("mantém os projetos na ordem aprovada e sem linguagem de prompts", async (
     "IdlePoke",
     "Clínica Voe Alto",
   ]);
-  await expect(page.locator(".projects")).not.toContainText("prompts");
+  await expect(page.locator(".projects__title")).toHaveAttribute(
+    "aria-label",
+    "Em parceria com equipes ambiciosas para criar experiências digitais relevantes na era dos prompts.",
+  );
   await expect(page.locator(".project-row")).toHaveCount(4);
   await expect(page.locator(".project-frame")).toHaveCount(12);
 });
@@ -131,8 +136,9 @@ test("fecha a narrativa com processo, estúdio e CTA real", async ({ page }) => 
   await page.goto("/");
 
   const process = page.locator("#como-trabalhamos");
-  await expect(process.getByRole("heading", { level: 2 })).toContainText(
-    "Atendimento direto, do início à entrega",
+  await expect(process.getByRole("heading", { level: 2 })).toHaveAttribute(
+    "aria-label",
+    "Um estúdio que valoriza um bom trabalho e cultiva as relações que o tornam possível.",
   );
   await expect(process.locator(".process-step__title")).toHaveText(["Entender", "Definir", "Criar"]);
   await expect(process).toContainText("liderado por Thalles Leal");
@@ -344,7 +350,7 @@ test("mantém metadados e bloqueio de indexação antes da autorização", async
   expect(graph["@graph"]?.filter((item) => item["@type"] === "Service")).toHaveLength(6);
   expect(graph["@graph"]?.some((item) => item["@type"] === "Organization")).toBe(true);
   await expect(page.locator('script[src*="googletagmanager.com"]')).toHaveCount(0);
-  await expect(page.locator('a[data-analytics-event="whatsapp_click"]')).toHaveCount(5);
+  await expect(page.locator('a[data-analytics-event="whatsapp_click"]')).toHaveCount(4);
 });
 
 test("página de privacidade está disponível", async ({ page }) => {
