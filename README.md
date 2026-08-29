@@ -6,6 +6,10 @@ Aplicação oficial da Sifego migrada da versão estática aprovada para Next.js
 
 O projeto nasce com indexação desativada. A política, os 40 assets e o showreel v10 foram aprovados em 28 de agosto de 2026. Não altere `NEXT_PUBLIC_SITE_INDEXABLE` para `true` antes da aprovação explícita da publicação definitiva.
 
+Homologação pública atual: https://sifego.pages.dev
+
+Repositório: https://github.com/Thalles714/sifego-site
+
 ## Desenvolvimento local
 
 Requisitos:
@@ -68,5 +72,13 @@ O projeto está preparado como exportação estática para Cloudflare Pages. Con
 5. Manter `NEXT_PUBLIC_SITE_INDEXABLE=false` no staging.
 6. Executar `npm run check` e `npm run test:e2e` antes do envio.
 7. Alterar `NEXT_PUBLIC_SITE_INDEXABLE` para `true` somente após aprovação definitiva e em domínio próprio aprovado.
+
+O primeiro staging foi enviado pelo cliente oficial do Cloudflare. Enquanto a integração automática com GitHub não estiver configurada no painel, uma atualização validada pode ser publicada com:
+
+```bash
+npx wrangler pages deploy out --project-name sifego --branch main
+```
+
+Esse comando não substitui `npm run check`, `npm run test:e2e` nem a aprovação de publicação.
 
 Consulte `../docs/pre-publicacao/` para a auditoria técnica, os bloqueios externos e o checklist de publicação.
