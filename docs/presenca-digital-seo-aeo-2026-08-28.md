@@ -233,5 +233,8 @@ SEO não garante primeira posição nem citação por ferramentas de IA. O resul
 - Foto de perfil e capa institucionais configuradas.
 - Nenhum post, convite, anúncio ou impulsionamento publicado.
 - Os dois perfis foram adicionados ao rodapé, ao `sameAs` do JSON-LD e ao `llms.txt`.
+- Commit da integração: `74a29d2` na branch `main`.
+- Preview imutável validado: `https://4ee6c22f.sifego.pages.dev`.
+- Homologação principal validada: `https://sifego.pages.dev`.
 
 Pendências manuais: corrigir `trafego` para `tráfego` na bio pública do Instagram, acrescentar a linha final sobre o WhatsApp e confirmar no aplicativo se o número conectado aparece integralmente como `+55 62 99872-9014`. Os links atuais de homologação devem ser substituídos pelo domínio próprio quando ele for comprado.
