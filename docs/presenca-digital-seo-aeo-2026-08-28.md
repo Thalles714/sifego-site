@@ -177,7 +177,21 @@ No mobile, o LCP é o poster do showreel e a carga total foi dominada por mídia
 
 A API do PageSpeed Insights foi tentada nas seis combinações, mas recusou todas por cota diária compartilhada. O Lighthouse local oficial produziu as métricas acima. Fonte metodológica: [PageSpeed Insights API](https://developers.google.com/speed/docs/insights/v5/get-started).
 
-Ainda pendentes: E2E contra a homologação depois do novo deploy, headers HTTP reais do novo build, resposta pública de `llms.txt` e validação remota do JSON-LD.
+### Validação após publicação
+
+- Commit publicado: `73e582b` na branch `main`.
+- Homologação principal: `https://sifego.pages.dev`.
+- Preview imutável do deploy: `https://5701a2da.sifego.pages.dev`.
+- Home e `llms.txt`: HTTP 200.
+- `llms.txt`: `text/plain; charset=utf-8`.
+- JSON-LD público: `Organization`, `WebSite` e seis entidades `Service` confirmados no HTML.
+- GA4 público: ausente, como esperado enquanto `NEXT_PUBLIC_ANALYTICS_ENABLED=false`.
+- `robots.txt`: `Disallow: /`.
+- Meta robots e `X-Robots-Tag`: `noindex, nofollow`.
+- Sitemap público válido, não enviado a mecanismos de busca.
+- E2E na homologação: 26 aprovados e 4 pulados conforme dispositivo.
+
+Ainda pendente: validação do JSON-LD em ferramenta visual externa após a futura liberação de rastreamento. O HTML e a estrutura foram validados localmente e na resposta pública.
 
 ## 10. Dependências do domínio e plano 30, 60 e 90 dias
 
