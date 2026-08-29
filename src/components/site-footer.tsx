@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { BrandSymbol } from "@/components/brand-symbol";
 import { projectNavigation, services } from "@/lib/content";
-import { whatsappUrl } from "@/lib/site";
+import { facebookUrl, instagramUrl, whatsappUrl } from "@/lib/site";
 
 export function SiteFooter() {
   return (
@@ -51,6 +51,28 @@ export function SiteFooter() {
                 aria-label="WhatsApp da Sifego, abre outro site em nova aba"
               >
                 WhatsApp
+              </a>
+            </li>
+            <li>
+              <a
+                className="footer-group__link footer-group__link--external"
+                href={instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram da Sifego, abre outro site em nova aba"
+              >
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                className="footer-group__link footer-group__link--external"
+                href={facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook da Sifego, abre outro site em nova aba"
+              >
+                Facebook
               </a>
             </li>
           </ul>

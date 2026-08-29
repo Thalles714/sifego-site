@@ -1,5 +1,11 @@
 import { services } from "@/lib/content";
-import { getSiteUrl, siteDescription, siteName, whatsappNumber } from "@/lib/site";
+import {
+  getSiteUrl,
+  siteDescription,
+  siteName,
+  socialProfiles,
+  whatsappNumber,
+} from "@/lib/site";
 
 export function StructuredData() {
   const siteUrl = getSiteUrl();
@@ -16,6 +22,7 @@ export function StructuredData() {
         url: siteUrl.toString(),
         logo: new URL("/assets/brand/sifego-symbol.svg", siteUrl).toString(),
         description: siteDescription,
+        sameAs: socialProfiles,
         founder: { "@type": "Person", name: "Thalles Leal" },
         areaServed: { "@type": "Country", name: "Brasil" },
         contactPoint: {

@@ -69,3 +69,11 @@ Para começar, fale diretamente conosco pelo WhatsApp no link do perfil.
 - Facebook: `https://sifego.pages.dev/?utm_source=facebook&utm_medium=social&utm_campaign=perfil`
 
 Após a compra, substituir os dois endereços pelo domínio próprio antes de promover os perfis.
+
+## Estado dos canais em 29 de agosto de 2026
+
+- Instagram: `https://www.instagram.com/sifegostudio/`.
+- Facebook: `https://www.facebook.com/profile.php?id=61593913471785`.
+- Conexão Meta concluída.
+- WhatsApp conectado ao Facebook.
+- Publicações 1, 2 e 3 continuam apenas preparadas. Nenhuma foi publicada.

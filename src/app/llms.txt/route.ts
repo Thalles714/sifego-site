@@ -1,4 +1,4 @@
-import { getSiteUrl, whatsappUrl } from "@/lib/site";
+import { facebookUrl, getSiteUrl, instagramUrl, whatsappUrl } from "@/lib/site";
 
 export const dynamic = "force-static";
 
@@ -30,6 +30,8 @@ Inteligência artificial e criação de prompts não fazem parte da oferta comer
 - [Página inicial](${page("/")})
 - [Política de privacidade](${page("/politica-de-privacidade")})
 - [WhatsApp oficial](${whatsappUrl})
+- [Instagram oficial](${instagramUrl})
+- [Facebook oficial](${facebookUrl})
 `;
 
   return new Response(content, {

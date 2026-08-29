@@ -222,3 +222,16 @@ Ainda pendente: validação do JSON-LD em ferramenta visual externa após a futu
 - Revisar titles, snippets, Core Web Vitals, links internos e conversão para WhatsApp.
 
 SEO não garante primeira posição nem citação por ferramentas de IA. O resultado depende de indexação, utilidade e originalidade do conteúdo, concorrência, autoridade, experiência da página, consistência da marca e tempo.
+
+## 11. Redes oficiais configuradas em 29 de agosto de 2026
+
+- Instagram profissional: `https://www.instagram.com/sifegostudio/`.
+- Facebook: `https://www.facebook.com/profile.php?id=61593913471785`.
+- Instagram e Facebook conectados no ecossistema Meta.
+- WhatsApp conectado à Página do Facebook como número principal.
+- Acesso administrativo da Página restrito a Thalles Leal.
+- Foto de perfil e capa institucionais configuradas.
+- Nenhum post, convite, anúncio ou impulsionamento publicado.
+- Os dois perfis foram adicionados ao rodapé, ao `sameAs` do JSON-LD e ao `llms.txt`.
+
+Pendências manuais: corrigir `trafego` para `tráfego` na bio pública do Instagram, acrescentar a linha final sobre o WhatsApp e confirmar no aplicativo se o número conectado aparece integralmente como `+55 62 99872-9014`. Os links atuais de homologação devem ser substituídos pelo domínio próprio quando ele for comprado.

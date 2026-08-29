@@ -8,6 +8,10 @@ export const whatsappUrl =
 
 export const whatsappNumber = "+55 62 99872-9014";
 
+export const instagramUrl = "https://www.instagram.com/sifegostudio/";
+export const facebookUrl = "https://www.facebook.com/profile.php?id=61593913471785";
+export const socialProfiles = [instagramUrl, facebookUrl] as const;
+
 export function isAnalyticsEnabled(): boolean {
   return (
     process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === "true" &&

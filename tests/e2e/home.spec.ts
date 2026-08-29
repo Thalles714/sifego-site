@@ -33,7 +33,7 @@ test("preserva a proposta, a conversão única e a estrutura final", async ({ pa
   ).toEqual(["inicio", "projetos", "servicos", "como-trabalhamos"]);
   await expect(page.locator(".project-logos")).toHaveCount(0);
   const externalLinks = page.locator('a[target="_blank"]');
-  await expect(externalLinks).toHaveCount(10);
+  await expect(externalLinks).toHaveCount(12);
   expect(
     await externalLinks.evaluateAll((links) =>
       links.every((link) => link.getAttribute("rel") === "noopener noreferrer"),
@@ -333,6 +333,8 @@ test("mantém metadados e bloqueio de indexação antes da autorização", async
   expect(llms.status()).toBe(200);
   expect(llms.headers()["content-type"]).toContain("text/plain");
   expect(await llms.text()).toContain("Inteligência artificial e criação de prompts não fazem parte");
+  expect(await llms.text()).toContain("https://www.instagram.com/sifegostudio/");
+  expect(await llms.text()).toContain("https://www.facebook.com/profile.php?id=61593913471785");
 
   const structuredData = page.locator('script[type="application/ld+json"]');
   await expect(structuredData).toHaveCount(1);
