@@ -237,4 +237,4 @@ SEO não garante primeira posição nem citação por ferramentas de IA. O resul
 - Preview imutável validado: `https://4ee6c22f.sifego.pages.dev`.
 - Homologação principal validada: `https://sifego.pages.dev`.
 
-Pendências manuais: corrigir `trafego` para `tráfego` na bio pública do Instagram, acrescentar a linha final sobre o WhatsApp e confirmar no aplicativo se o número conectado aparece integralmente como `+55 62 99872-9014`. Os links atuais de homologação devem ser substituídos pelo domínio próprio quando ele for comprado.
+Correções manuais confirmadas pelo proprietário em 29 de agosto de 2026: acento em `tráfego`, linha final sobre o WhatsApp na bio do Instagram e número conectado integralmente como `+55 62 99872-9014`. A atualização ainda não aparecia na consulta pública imediatamente após a correção e pode depender da propagação da Meta. Os links atuais de homologação devem ser substituídos pelo domínio próprio quando ele for comprado.
