@@ -1,0 +1,208 @@
+{
+  "source": "site/src",
+  "generatedAt": "2026-08-28",
+  "count": 40,
+  "totalBytes": 26400147,
+  "assets": [
+    {
+      "path": "assets/brand/sifego-symbol.svg",
+      "bytes": 400,
+      "sha256": "642a892e4c2e65d9487882310a955566dedacbdd5bfeacf87ee7cd9dfa2cc87b"
+    },
+    {
+      "path": "assets/production/final/showreel-sifego-brand-hero-mobile-v10.mp4",
+      "bytes": 3300913,
+      "sha256": "6972f657883789ef4ae37e7a41d60da0b624a6ebcdc7361ce4746fb3fee490fd"
+    },
+    {
+      "path": "assets/production/final/showreel-sifego-brand-hero-ultrawide-v10.mp4",
+      "bytes": 10593901,
+      "sha256": "07efec2182044d650d9bfb9a42330c99c144f5548071046db20d9f7c340e6ac1"
+    },
+    {
+      "path": "assets/production/site/hero-rail/01-sobre-citylight.webp",
+      "bytes": 42412,
+      "sha256": "8fe5d0497677db9cbbb3893feacd4be223adb29cd0e2d45d9870d49153097fb7"
+    },
+    {
+      "path": "assets/production/site/hero-rail/03-trafego-cartao.webp",
+      "bytes": 53436,
+      "sha256": "6356ecc5ca6a609d22a2f2d24b7179d6fb5955782908f6ba4018002105481df5"
+    },
+    {
+      "path": "assets/production/site/hero-rail/04-sistemas-papelaria.webp",
+      "bytes": 65292,
+      "sha256": "3c9273148e7f5c50e27173f9173028d76219383350f3f21eea8e48d5e49c0e54"
+    },
+    {
+      "path": "assets/production/site/hero-rail/05-automacoes-vidro.webp",
+      "bytes": 17910,
+      "sha256": "850f5def3d95799bcdca206ff7ba560e88678eef54c448e7e4e2241b8f5ab497"
+    },
+    {
+      "path": "assets/production/site/hero-rail/06-evolucao-metro.webp",
+      "bytes": 47444,
+      "sha256": "e4eddaf5bb5dd20f7f0dd84c7811d41a0cfc938cbca3860592e4707ef61b4355"
+    },
+    {
+      "path": "assets/production/site/hero-rail/07-consultoria-caderno.webp",
+      "bytes": 46080,
+      "sha256": "f2254afd0a9ef4c6ad8df197a55834d6ef31595463314d45d0355e5b1d7a1378"
+    },
+    {
+      "path": "assets/production/site/project-logos/idlepoke-logo.png",
+      "bytes": 121588,
+      "sha256": "a39ee4d8d1e4ea63d8efa5fb9304fdac435d54ee92ecebd93847e494276e7626"
+    },
+    {
+      "path": "assets/production/site/projects/idlepoke-01-mundo.webp",
+      "bytes": 161282,
+      "sha256": "5bf53d1e3e978562ee46cfa9191cf178e46e270499a154f1e582904199edf32d"
+    },
+    {
+      "path": "assets/production/site/projects/idlepoke-02-impacto.webp",
+      "bytes": 117502,
+      "sha256": "035eb21e348b7e12cd480a72ce5fa2984dcf42ae3386313aad8293176af08c7b"
+    },
+    {
+      "path": "assets/production/site/projects/idlepoke-03-dashboard-user-20260825.png",
+      "bytes": 172350,
+      "sha256": "a3d0dadfc852af29ecc079a3d0892243790f8a5bc306ba622d17c58cb2225814"
+    },
+    {
+      "path": "assets/production/site/projects/idlepoke-gameplay-dungeon-v01.mp4",
+      "bytes": 890511,
+      "sha256": "9f3cbd8e1b7070f7672c65d73bf3d3d775a67f9c36ef6ccef9a7664453269f7e"
+    },
+    {
+      "path": "assets/production/site/projects/idlepoke-gameplay-dungeon-v01.webm",
+      "bytes": 918364,
+      "sha256": "dfd5847d78c9c3b30868f5b5ac4e5aadba42952d019534cb1bf63a9b2e8679a7"
+    },
+    {
+      "path": "assets/production/site/projects/idlepoke-gameplay-mundo-v01.mp4",
+      "bytes": 1507502,
+      "sha256": "982cc9a2f293038e256e41cee22195d130826f6ad22b817d18977cfb01ce6513"
+    },
+    {
+      "path": "assets/production/site/projects/idlepoke-gameplay-mundo-v01.webm",
+      "bytes": 1891644,
+      "sha256": "381f07c8f4662118a14abb51a2c3eab1b7803b3262c3203d2fbb19fb35b65235"
+    },
+    {
+      "path": "assets/production/site/projects/nitido-logo-mark-color.svg",
+      "bytes": 252,
+      "sha256": "818e2cf2491c9df9eae02c2112afd0e931d95f7fcb66d974a764c591081804cf"
+    },
+    {
+      "path": "assets/production/site/projects/nitido-logo-mark.svg",
+      "bytes": 252,
+      "sha256": "5443ea66ced0d7c4b96c905608273d42676462770166390e04b825ae704f1b87"
+    },
+    {
+      "path": "assets/production/site/projects/nitido-mockup-01-monitor-categorias-v2.webp",
+      "bytes": 23198,
+      "sha256": "649583fccde7a9d4df40da1dc2749d0ee49e982c5f413e31ccd0fadcf8b22aff"
+    },
+    {
+      "path": "assets/production/site/projects/nitido-mockup-02-cartao-celular-v2.webp",
+      "bytes": 75416,
+      "sha256": "f6b814e35266d4881bb7143ff230be8520bd67ae6bdc782503a2d4b31708e801"
+    },
+    {
+      "path": "assets/production/site/projects/nitido-mockup-03-pessoa-tablet-v2.webp",
+      "bytes": 140180,
+      "sha256": "5ddc91f8280ada74723f98993c9e8e59e72b78cda092b5246d5e7da55ef91cd3"
+    },
+    {
+      "path": "assets/production/site/projects/voe-alto-02-fachada.webp",
+      "bytes": 142850,
+      "sha256": "ed585c093df413334d9b8172c35c94e8dacfb3985068183e73efd55e408ce38c"
+    },
+    {
+      "path": "assets/production/site/projects/voe-alto-logo-mark.png",
+      "bytes": 64911,
+      "sha256": "0f4f8f2e60b7635a250950087b08dad13a0ac588ff15a5b79506a93944f23bb2"
+    },
+    {
+      "path": "assets/production/site/projects/voe-alto-mockup-03-tablet-v1.webp",
+      "bytes": 121658,
+      "sha256": "c9871ad62cd7ee0daa20ccda6af784c0f6ef084919eb8e2b20f0437718398875"
+    },
+    {
+      "path": "assets/production/site/projects/voe-alto-site-tour-poster-v2.webp",
+      "bytes": 44850,
+      "sha256": "778e84b8c7622b021f79ac47663cc0ee30a9b784e92cf702933192029c0c11a1"
+    },
+    {
+      "path": "assets/production/site/projects/voe-alto-site-tour-v2.mp4",
+      "bytes": 2855845,
+      "sha256": "7a511a775b17f89bf70953b9851d55fe35cbceea752e5ef74058eb22b2759261"
+    },
+    {
+      "path": "assets/production/site/projects/voe-alto-site-tour-v2.webm",
+      "bytes": 1273914,
+      "sha256": "f4b2cf7f698c1469ebd7528192768c5ae9ebd54fc3601bdf4ec7f79b54dcdabf"
+    },
+    {
+      "path": "assets/production/site/projects/workflow-logo-mark-color.svg",
+      "bytes": 220,
+      "sha256": "d1f7e668e1801881e0e2a4726ee3b84d5e99daab59a5b44b703242237053ab62"
+    },
+    {
+      "path": "assets/production/site/projects/workflow-logo-mark.svg",
+      "bytes": 220,
+      "sha256": "ad92488fed6960790aa1f1fdd9d8585ae2fdd602fc27fd68274f17a7bb07f841"
+    },
+    {
+      "path": "assets/production/site/projects/workflow-mockup-01-estacao-cromatica-v1.webp",
+      "bytes": 94742,
+      "sha256": "2f5a693d51c47a0bcddae7a42bb62621facf71c1ffcaf31b3a66b4ed47ee12dc"
+    },
+    {
+      "path": "assets/production/site/projects/workflow-mockup-02-tablet-lounge-v1.webp",
+      "bytes": 101834,
+      "sha256": "bb6cb2a01e0473b870773086a13de20ea55157e8741e68077292f1d210298c1b"
+    },
+    {
+      "path": "assets/production/site/projects/workflow-mockup-03-sala-decisao-v1.webp",
+      "bytes": 128822,
+      "sha256": "5eec5eeb22d63bf109d4e61c9ada7f3874ce09862c5bfd3febcae0264eab1256"
+    },
+    {
+      "path": "assets/production/site/services/automacoes-integracoes-workstation-v03.webp",
+      "bytes": 58540,
+      "sha256": "94005b80386723ee63c618ec0110002f8180998d20c7073f8817ff1b0bcd5534"
+    },
+    {
+      "path": "assets/production/site/services/branding-sifego-system-v04-poster.webp",
+      "bytes": 6992,
+      "sha256": "6ddfe6c203596ec6118ac1694d8e24937f2efedf56b687ec851bb63ba64f3b99"
+    },
+    {
+      "path": "assets/production/site/services/branding-sifego-system-v04.webm",
+      "bytes": 929958,
+      "sha256": "4c19fa20b69ee8555613f30b3d2218e712fe0028125cbbfbdd2d79115bdd4676"
+    },
+    {
+      "path": "assets/production/site/services/consultoria-decisoes-v01.webp",
+      "bytes": 68960,
+      "sha256": "7885ed68a870cf3e8506d99b497634a8cefbbd59a61f784d186621cd9ae657b8"
+    },
+    {
+      "path": "assets/production/site/services/sistemas-workflow-arco-v01.webp",
+      "bytes": 122288,
+      "sha256": "be62d35b59938b7f5cb00112f4a12fb8e62bac0bcaa58fcd6fe2d7170646db2b"
+    },
+    {
+      "path": "assets/production/site/services/sites-landing-pages-thalles-v02.webp",
+      "bytes": 83690,
+      "sha256": "605fcb6fb44388f3cf6c823a062d67818e4dc12f6b9a494edde229147a20bd5f"
+    },
+    {
+      "path": "assets/production/site/services/trafego-idlepoke-reuniao-v05.webp",
+      "bytes": 112024,
+      "sha256": "3fd6c55a98d8f94fd53d1ad14f6133a79844736a347002dba79ffdeecb77532a"
+    }
+  ]
+}

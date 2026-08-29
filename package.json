@@ -1,0 +1,35 @@
+{
+  "name": "site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test:branding": "node scripts/qa-branding-v04.mjs",
+    "test:hosting": "node scripts/check-cloudflare-config.mjs",
+    "assets:manifest": "node scripts/runtime-assets.mjs --write",
+    "assets:check": "node scripts/runtime-assets.mjs --check",
+    "favicon:generate": "node scripts/generate-favicon.mjs",
+    "social:generate": "node scripts/generate-social-image.mjs",
+    "test:e2e": "playwright test",
+    "check": "npm run lint && npm run typecheck && npm run test:branding && npm run test:hosting && npm run assets:check && npm run build"
+  },
+  "dependencies": {
+    "next": "16.3.3",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.3",
+    "typescript": "^5"
+  }
+}
