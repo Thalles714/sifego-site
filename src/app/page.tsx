@@ -5,10 +5,12 @@ import { ServicesSection } from "@/components/services-section";
 import { SiteExperience } from "@/components/site-experience";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { StructuredData } from "@/components/structured-data";
 
 export default function HomePage() {
   return (
     <>
+      <StructuredData />
       <SiteHeader />
       <main id="conteudo">
         <HeroSection />

@@ -6,6 +6,15 @@ export const siteDescription =
 export const whatsappUrl =
   "https://wa.me/5562998729014?text=Ol%C3%A1%2C%20conheci%20a%20Sifego%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto.";
 
+export const whatsappNumber = "+55 62 99872-9014";
+
+export function isAnalyticsEnabled(): boolean {
+  return (
+    process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === "true" &&
+    /^G-[A-Z0-9]+$/.test(process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() ?? "")
+  );
+}
+
 export function getSiteUrl(): URL {
   const configuredUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
 

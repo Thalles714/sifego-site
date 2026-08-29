@@ -4,6 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Política de privacidade | Sifego",
   description: "Como a Sifego trata informações relacionadas ao uso deste site.",
+  alternates: { canonical: "/politica-de-privacidade" },
+  openGraph: {
+    title: "Política de privacidade | Sifego",
+    description: "Como a Sifego trata informações relacionadas ao uso deste site.",
+    url: "/politica-de-privacidade",
+  },
 };
 
 export default function PrivacyPolicyPage() {

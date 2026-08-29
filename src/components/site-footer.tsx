@@ -44,6 +44,8 @@ export function SiteFooter() {
               <a
                 className="footer-group__link footer-group__link--external"
                 href={whatsappUrl}
+                data-analytics-event="whatsapp_click"
+                data-cta-location="footer_directory"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp da Sifego, abre outro site em nova aba"
@@ -62,6 +64,8 @@ export function SiteFooter() {
             <a
               className="site-footer__cta external-action"
               href={whatsappUrl}
+              data-analytics-event="whatsapp_click"
+              data-cta-location="footer_cta"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Agende uma reunião pelo WhatsApp, abre outro site em nova aba"

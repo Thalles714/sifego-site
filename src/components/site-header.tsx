@@ -43,6 +43,8 @@ export function SiteHeader() {
           <a
             className="contact-chip external-action"
             href={whatsappUrl}
+            data-analytics-event="whatsapp_click"
+            data-cta-location="header"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Contato no WhatsApp, abre outro site em nova aba"

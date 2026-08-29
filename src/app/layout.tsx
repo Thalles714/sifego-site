@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import type { ReactNode } from "react";
-import { getSiteUrl, isSiteIndexable, siteDescription, siteName, siteTitle } from "@/lib/site";
+import { GoogleAnalytics } from "@/components/google-analytics";
+import { getSiteUrl, isAnalyticsEnabled, isSiteIndexable, siteDescription, siteName, siteTitle } from "@/lib/site";
 import "./globals.css";
 
 const albertSans = localFont({
@@ -40,6 +41,8 @@ const instrumentSerif = localFont({
 
 const indexable = isSiteIndexable();
 const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+const analyticsEnabled = isAnalyticsEnabled();
+const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() ?? "";
 
 export const metadata: Metadata = {
   metadataBase: getSiteUrl(),
@@ -114,7 +117,10 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        {analyticsEnabled ? <GoogleAnalytics measurementId={measurementId} /> : null}
+      </body>
     </html>
   );
 }

@@ -328,10 +328,29 @@ test("mantém metadados e bloqueio de indexação antes da autorização", async
 
   const robots = await request.get("/robots.txt");
   expect(await robots.text()).toContain("Disallow: /");
+
+  const llms = await request.get("/llms.txt");
+  expect(llms.status()).toBe(200);
+  expect(llms.headers()["content-type"]).toContain("text/plain");
+  expect(await llms.text()).toContain("Inteligência artificial e criação de prompts não fazem parte");
+
+  const structuredData = page.locator('script[type="application/ld+json"]');
+  await expect(structuredData).toHaveCount(1);
+  const graph = JSON.parse(await structuredData.textContent() ?? "{}") as {
+    "@graph"?: Array<{ "@type"?: string }>;
+  };
+  expect(graph["@graph"]?.filter((item) => item["@type"] === "Service")).toHaveLength(6);
+  expect(graph["@graph"]?.some((item) => item["@type"] === "Organization")).toBe(true);
+  await expect(page.locator('script[src*="googletagmanager.com"]')).toHaveCount(0);
+  await expect(page.locator('a[data-analytics-event="whatsapp_click"]')).toHaveCount(5);
 });
 
 test("página de privacidade está disponível", async ({ page }) => {
   await page.goto("/politica-de-privacidade");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Política de privacidade");
   await expect(page.getByRole("link", { name: "Voltar para o site" })).toHaveAttribute("href", "/");
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+    "href",
+    /\/politica-de-privacidade$/,
+  );
 });

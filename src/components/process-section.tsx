@@ -62,6 +62,8 @@ export function ProcessSection() {
             <a
               className="studio-panel__cta external-action"
               href={whatsappUrl}
+              data-analytics-event="whatsapp_click"
+              data-cta-location="process"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Agende uma reunião pelo WhatsApp, abre outro site em nova aba"
